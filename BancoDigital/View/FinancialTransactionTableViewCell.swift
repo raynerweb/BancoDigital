@@ -23,6 +23,12 @@ class FinancialTransactionTableViewCell: UITableViewCell {
         descriptionLabel.text = financialTransaction.description
         let currency = String(format: "R$%.02f", financialTransaction.transactionValue)
         transactionValueLabel.text = currency
+        
+        if financialTransaction.accountingTransaction == .debit {
+            transactionValueLabel.textColor = .red
+        } else {
+            transactionValueLabel.textColor = .green
+        }
     }
     
 }

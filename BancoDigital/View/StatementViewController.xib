@@ -10,7 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatementViewController" customModule="BancoDigital" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="Ehj-Mo-YqR" id="WTn-rE-aJe"/>
+                <outlet property="loading" destination="MZr-QC-uO1" id="W9b-Rc-xKc"/>
+                <outlet property="tableView" destination="Ehj-Mo-YqR" id="W0u-Nz-yjc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -96,7 +97,14 @@
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ehj-Mo-YqR">
                     <rect key="frame" x="0.0" y="287" width="414" height="575"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="CWn-aw-hWP"/>
+                        <outlet property="delegate" destination="-1" id="gLN-3x-OWd"/>
+                    </connections>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="MZr-QC-uO1">
+                    <rect key="frame" x="197" y="438" width="20" height="20"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -110,9 +118,11 @@
                 <constraint firstItem="jHo-pL-8Gb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Rm5-Ef-T60"/>
                 <constraint firstItem="dK6-gZ-sMn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UH9-E0-HUd"/>
                 <constraint firstItem="SO3-b2-Vgb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="XUi-te-4fw"/>
+                <constraint firstItem="MZr-QC-uO1" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Z6m-dv-wqd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a2C-8J-oDi" secondAttribute="trailing" constant="16" id="aPc-VO-kMt"/>
                 <constraint firstItem="Ehj-Mo-YqR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="arh-cL-dze"/>
                 <constraint firstItem="3SY-gG-Ag5" firstAttribute="top" secondItem="SO3-b2-Vgb" secondAttribute="bottom" constant="8" id="fXL-tT-e9g"/>
+                <constraint firstItem="MZr-QC-uO1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gee-gH-oMn"/>
                 <constraint firstItem="hBC-OP-iTx" firstAttribute="top" secondItem="a2C-8J-oDi" secondAttribute="bottom" constant="24" id="iPX-zF-rNc"/>
                 <constraint firstItem="a2C-8J-oDi" firstAttribute="top" secondItem="jHo-pL-8Gb" secondAttribute="bottom" constant="16" id="jb0-wX-79N"/>
                 <constraint firstItem="hBC-OP-iTx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kY3-Xy-eFV"/>
@@ -120,7 +130,7 @@
                 <constraint firstItem="Ehj-Mo-YqR" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="mWn-jI-XJK"/>
                 <constraint firstItem="SO3-b2-Vgb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nNs-Ab-wNw"/>
             </constraints>
-            <point key="canvasLocation" x="-30.434782608695656" y="93.75"/>
+            <point key="canvasLocation" x="-70" y="61"/>
         </view>
     </objects>
     <resources>
