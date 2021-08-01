@@ -8,26 +8,61 @@
 import XCTest
 @testable import BancoDigital
 
+import RxSwift
+
 class BancoDigitalTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    var expectationGoToHome: XCTestExpectation!
+    var expectationBadPassword: XCTestExpectation!
+    
+    var viewModel: LoginViewModel!
+    var disposeBag: DisposeBag!
+    
+    override func setUp() {
+        super.setUp()
+        self.disposeBag = DisposeBag()
+        
+        self.expectationGoToHome = XCTestExpectation(description: "Deve navegar para a Home")
+        self.expectationBadPassword = XCTestExpectation(description: "Deve negar login")
+        
+        self.viewModel = LoginViewModel(appCoordinator: self)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+        super.tearDown()
+        self.expectationGoToHome = nil
+        self.expectationBadPassword = nil
+        self.disposeBag = nil
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testLoginSuccessful() {
+        viewModel.login(login: Login(username: "rayner", password: "123456"))
+        wait(for: [self.expectationGoToHome], timeout: 5)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testLoginError() {
+        viewModel.onError.subscribe { event in
+            if let message = event.element {
+                XCTAssertEqual(message, "usuario ou senha inválido")
+                self.expectationBadPassword.fulfill()
+            } else {
+                XCTFail("Mensagem não esperada")
+            }
+        }.disposed(by: disposeBag)
+        
+        viewModel.login(login: Login(username: "", password: ""))
+        
+        wait(for: [self.expectationBadPassword], timeout: 5)
     }
+    
 
+}
+
+extension BancoDigitalTests : LoginCoordinator {
+    
+    func navigateHomeScreen() {
+        self.expectationGoToHome.fulfill()
+    }
+    
 }
