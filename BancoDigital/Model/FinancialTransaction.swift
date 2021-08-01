@@ -11,4 +11,11 @@ struct FinancialTransaction {
     let id: String
     let description: String
     let transactionValue: Double
+    let transactionDate: Date
+    let accountingTransaction: AccountingTransaction
+}
+
+enum AccountingTransaction {
+    case credit
+    case debit
 }

@@ -9,15 +9,28 @@ import UIKit
 
 class StatementViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    @IBOutlet weak var tableView: UITableView!
     
     private var statement = [FinancialTransaction]() {
         didSet {
-//            tableView.reloadData()
+            tableView.reloadData()
         }
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        FinancialTransactionTableViewCell.register(inside: self.tableView)
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
+        
+    }
+    
+
     
     
 
