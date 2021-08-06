@@ -10,6 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransferViewController" customModule="BancoDigital" customModuleProvider="target">
             <connections>
+                <outlet property="favoredDocument" destination="2h9-Xk-fqt" id="FOS-Gm-RgG"/>
+                <outlet property="favoredDocumentConstraintLeft" destination="Imu-iv-vuj" id="VTG-Zn-Wsf"/>
+                <outlet property="favoredDocumentConstraintRight" destination="PLh-xn-29L" id="JdL-ot-VhM"/>
+                <outlet property="favoredDocumentContraintBottom" destination="aaJ-Iz-b8B" id="AZr-ff-0X4"/>
+                <outlet property="favoredDocumentoConstraintTop" destination="IBW-z9-62J" id="2gO-ao-prj"/>
                 <outlet property="selectedBank" destination="cbT-Gx-dNS" id="LwE-3c-tuK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -19,96 +24,139 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="OM1-ZV-J1Z">
-                    <rect key="frame" x="105.5" y="104.5" width="203" height="32"/>
-                    <segments>
-                        <segment title="Sou eu"/>
-                        <segment title="Outra pessoa"/>
-                    </segments>
-                </segmentedControl>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quem é o favorecido?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRE-sm-QbJ">
                     <rect key="frame" x="124" y="76" width="166" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbT-Gx-dNS">
-                    <rect key="frame" x="114" y="159.5" width="186" height="30"/>
-                    <state key="normal" title="Nome ou número do banco"/>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="OM1-ZV-J1Z">
+                    <rect key="frame" x="105.5" y="104.5" width="203" height="32"/>
+                    <segments>
+                        <segment title="Sou eu"/>
+                        <segment title="Outra pessoa"/>
+                    </segments>
                     <connections>
-                        <action selector="selectBank:" destination="-1" eventType="touchUpInside" id="Jml-H3-SYC"/>
+                        <action selector="favored:" destination="-1" eventType="valueChanged" id="pWt-Gq-5bU"/>
                     </connections>
-                </button>
+                </segmentedControl>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2h9-Xk-fqt">
+                    <rect key="frame" x="16" y="151.5" width="382" height="62.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPF / CNPJ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fnx-mE-Qon">
+                            <rect key="frame" x="147.5" y="0.0" width="87" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MK9-vh-EkX">
+                            <rect key="frame" x="80" y="28.5" width="222" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" textContentType="tel"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailingMargin" secondItem="MK9-vh-EkX" secondAttribute="trailing" constant="80" id="B4n-ko-7Lg"/>
+                        <constraint firstItem="MK9-vh-EkX" firstAttribute="leading" secondItem="2h9-Xk-fqt" secondAttribute="leadingMargin" constant="80" id="pLM-LU-EKe"/>
+                    </constraints>
+                </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dados da conta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNW-Gt-kRY">
-                    <rect key="frame" x="147.5" y="213.5" width="119.5" height="20.5"/>
+                    <rect key="frame" x="147.5" y="284" width="119.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jPC-Ao-WKA">
-                    <rect key="frame" x="86.5" y="242" width="241" height="32"/>
+                    <rect key="frame" x="86.5" y="312.5" width="241" height="32"/>
                     <segments>
                         <segment title="Conta corrente"/>
                         <segment title="Conta Poupança"/>
                     </segments>
                 </segmentedControl>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkV-nm-LCv">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkV-nm-LCv">
                     <rect key="frame" x="163.5" y="812" width="87" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <inset key="contentEdgeInsets" minX="16" minY="16" maxX="16" maxY="16"/>
                     <state key="normal" title="Avançar"/>
                 </button>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QRm-za-1ND">
-                    <rect key="frame" x="126.5" y="305" width="161.5" height="62.5"/>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="7BK-A2-JGK">
+                    <rect key="frame" x="16" y="367.5" width="382" height="62.5"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agência (sem dígito)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlB-kT-nyQ">
-                            <rect key="frame" x="0.0" y="0.0" width="157" height="20.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Agência (sem dígito)" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rXc-lk-9rF">
-                            <rect key="frame" x="0.0" y="28.5" width="161.5" height="34"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
-                        </textField>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QRm-za-1ND">
+                            <rect key="frame" x="0.0" y="0.0" width="170" height="62.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agência (sem dígito)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlB-kT-nyQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="157" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Agência (sem dígito)" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rXc-lk-9rF">
+                                    <rect key="frame" x="0.0" y="28.5" width="161.5" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="PlB-kT-nyQ" firstAttribute="leading" secondItem="QRm-za-1ND" secondAttribute="leadingMargin" id="4Am-v7-i3r"/>
+                                <constraint firstItem="rXc-lk-9rF" firstAttribute="leading" secondItem="QRm-za-1ND" secondAttribute="leadingMargin" id="Ibo-Fh-lSE"/>
+                                <constraint firstItem="rXc-lk-9rF" firstAttribute="bottom" secondItem="QRm-za-1ND" secondAttribute="bottomMargin" id="K0Q-ta-1Id"/>
+                                <constraint firstItem="PlB-kT-nyQ" firstAttribute="top" secondItem="QRm-za-1ND" secondAttribute="topMargin" id="gyv-VJ-E5z"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="L8G-hm-U8l">
+                            <rect key="frame" x="233" y="0.0" width="149" height="62.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conta (com dígito)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPs-KB-12a">
+                                    <rect key="frame" x="0.0" y="0.0" width="149" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Conta (com dígito)" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ubo-6N-YMc">
+                                    <rect key="frame" x="0.0" y="28.5" width="149" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="ubo-6N-YMc" firstAttribute="bottom" secondItem="L8G-hm-U8l" secondAttribute="bottomMargin" id="1TP-Qk-tud"/>
+                                <constraint firstItem="ubo-6N-YMc" firstAttribute="trailing" secondItem="L8G-hm-U8l" secondAttribute="trailingMargin" id="ZmJ-zd-35E"/>
+                                <constraint firstItem="MPs-KB-12a" firstAttribute="top" secondItem="L8G-hm-U8l" secondAttribute="topMargin" id="kRW-QM-H82"/>
+                                <constraint firstAttribute="trailingMargin" secondItem="MPs-KB-12a" secondAttribute="trailing" id="zKD-ZM-Phn"/>
+                            </constraints>
+                        </stackView>
                     </subviews>
                 </stackView>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="L8G-hm-U8l">
-                    <rect key="frame" x="132.5" y="399.5" width="149" height="62.5"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conta (com dígito)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPs-KB-12a">
-                            <rect key="frame" x="0.0" y="0.0" width="142" height="20.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Conta (com dígito)" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ubo-6N-YMc">
-                            <rect key="frame" x="0.0" y="28.5" width="149" height="34"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
-                        </textField>
-                    </subviews>
-                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbT-Gx-dNS">
+                    <rect key="frame" x="114" y="230" width="186" height="30"/>
+                    <state key="normal" title="Nome ou número do banco"/>
+                    <connections>
+                        <action selector="selectBank:" destination="-1" eventType="touchUpInside" id="Jml-H3-SYC"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="gNW-Gt-kRY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="73u-d7-3x6"/>
-                <constraint firstItem="L8G-hm-U8l" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="82h-qf-UuV"/>
-                <constraint firstItem="xkV-nm-LCv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8YB-xn-oQE"/>
-                <constraint firstItem="OM1-ZV-J1Z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DsG-Sp-aSr"/>
-                <constraint firstItem="L8G-hm-U8l" firstAttribute="top" secondItem="QRm-za-1ND" secondAttribute="bottom" constant="32" id="EMq-V3-8WH"/>
-                <constraint firstItem="xkV-nm-LCv" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="EpN-b7-QdC"/>
-                <constraint firstItem="cbT-Gx-dNS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="G3s-14-R2f"/>
-                <constraint firstItem="QRm-za-1ND" firstAttribute="top" secondItem="jPC-Ao-WKA" secondAttribute="bottom" constant="32" id="Pnx-IZ-JiH"/>
-                <constraint firstItem="jPC-Ao-WKA" firstAttribute="top" secondItem="gNW-Gt-kRY" secondAttribute="bottom" constant="8" id="TJ2-mb-pmA"/>
-                <constraint firstItem="cbT-Gx-dNS" firstAttribute="top" secondItem="OM1-ZV-J1Z" secondAttribute="bottom" constant="24" id="UkI-ph-HaI"/>
-                <constraint firstItem="zRE-sm-QbJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="aIu-Gq-cJo"/>
-                <constraint firstItem="jPC-Ao-WKA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aWI-RY-Dmj"/>
-                <constraint firstItem="zRE-sm-QbJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bEJ-Le-VdO"/>
-                <constraint firstItem="gNW-Gt-kRY" firstAttribute="top" secondItem="cbT-Gx-dNS" secondAttribute="bottom" constant="24" id="cNK-8b-fjB"/>
-                <constraint firstItem="QRm-za-1ND" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dzS-Jc-EjB"/>
-                <constraint firstItem="OM1-ZV-J1Z" firstAttribute="top" secondItem="zRE-sm-QbJ" secondAttribute="bottom" constant="8" id="szx-ES-B43"/>
+                <constraint firstItem="jPC-Ao-WKA" firstAttribute="top" secondItem="gNW-Gt-kRY" secondAttribute="bottom" constant="8" id="38e-VU-y8Y"/>
+                <constraint firstItem="cbT-Gx-dNS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3tI-AN-iCt"/>
+                <constraint firstItem="zRE-sm-QbJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="AYd-wd-aFC"/>
+                <constraint firstItem="gNW-Gt-kRY" firstAttribute="top" secondItem="cbT-Gx-dNS" secondAttribute="bottom" constant="24" id="DdL-MH-YZJ"/>
+                <constraint firstItem="7BK-A2-JGK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="G5j-9o-dsc"/>
+                <constraint firstItem="zRE-sm-QbJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HUe-da-Gd1"/>
+                <constraint firstItem="2h9-Xk-fqt" firstAttribute="top" secondItem="OM1-ZV-J1Z" secondAttribute="bottom" constant="16" id="IBW-z9-62J"/>
+                <constraint firstItem="2h9-Xk-fqt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Imu-iv-vuj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7BK-A2-JGK" secondAttribute="trailing" constant="16" id="LmW-HO-6Sl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2h9-Xk-fqt" secondAttribute="trailing" constant="16" id="PLh-xn-29L"/>
+                <constraint firstItem="cbT-Gx-dNS" firstAttribute="top" secondItem="2h9-Xk-fqt" secondAttribute="bottom" constant="16" id="aaJ-Iz-b8B"/>
+                <constraint firstItem="OM1-ZV-J1Z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dUe-35-12I"/>
+                <constraint firstItem="7BK-A2-JGK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dcf-bd-M0h"/>
+                <constraint firstItem="OM1-ZV-J1Z" firstAttribute="top" secondItem="zRE-sm-QbJ" secondAttribute="bottom" constant="8" id="hwW-Ca-1xi"/>
+                <constraint firstItem="gNW-Gt-kRY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iMF-8g-kMH"/>
+                <constraint firstItem="jPC-Ao-WKA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="r0u-qg-xiV"/>
+                <constraint firstItem="2h9-Xk-fqt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="s5P-da-7n3"/>
+                <constraint firstItem="7BK-A2-JGK" firstAttribute="top" secondItem="jPC-Ao-WKA" secondAttribute="bottom" constant="24" id="sXj-Vx-1jI"/>
             </constraints>
             <point key="canvasLocation" x="34.782608695652179" y="68.973214285714278"/>
         </view>

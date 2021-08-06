@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		05A0204231753255F2F22442 /* Pods_BancoDigitalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEABE88260BCDDEB5CFE4B0 /* Pods_BancoDigitalTests.framework */; };
 		731E706E388B33B41B2C9252 /* Pods_BancoDigital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B070B51FEA08E48B787B49 /* Pods_BancoDigital.framework */; };
+		95593CFA26BCBC8900C9E078 /* ValueTransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95593CF826BCBC8900C9E078 /* ValueTransferViewController.swift */; };
+		95593CFB26BCBC8900C9E078 /* ValueTransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95593CF926BCBC8900C9E078 /* ValueTransferViewController.xib */; };
+		95593CFE26BD889D00C9E078 /* SuccessfulTransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95593CFC26BD889D00C9E078 /* SuccessfulTransferViewController.swift */; };
+		95593CFF26BD889D00C9E078 /* SuccessfulTransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95593CFD26BD889D00C9E078 /* SuccessfulTransferViewController.xib */; };
 		9576D29926A0FFA400BFBD0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576D29826A0FFA400BFBD0B /* AppDelegate.swift */; };
 		9576D29D26A0FFA400BFBD0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576D29C26A0FFA400BFBD0B /* ViewController.swift */; };
 		9576D2A326A0FFA400BFBD0B /* BancoDigital.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9576D2A126A0FFA400BFBD0B /* BancoDigital.xcdatamodeld */; };
@@ -64,6 +68,10 @@
 		63B410F264140CF4C1587007 /* Pods-BancoDigitalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancoDigitalTests.debug.xcconfig"; path = "Target Support Files/Pods-BancoDigitalTests/Pods-BancoDigitalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7232DAB0A542EE5A0AB1BD80 /* Pods-BancoDigital-BancoDigitalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancoDigital-BancoDigitalUITests.debug.xcconfig"; path = "Target Support Files/Pods-BancoDigital-BancoDigitalUITests/Pods-BancoDigital-BancoDigitalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		79B070B51FEA08E48B787B49 /* Pods_BancoDigital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BancoDigital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95593CF826BCBC8900C9E078 /* ValueTransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueTransferViewController.swift; sourceTree = "<group>"; };
+		95593CF926BCBC8900C9E078 /* ValueTransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ValueTransferViewController.xib; sourceTree = "<group>"; };
+		95593CFC26BD889D00C9E078 /* SuccessfulTransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulTransferViewController.swift; sourceTree = "<group>"; };
+		95593CFD26BD889D00C9E078 /* SuccessfulTransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessfulTransferViewController.xib; sourceTree = "<group>"; };
 		9576D29526A0FFA400BFBD0B /* BancoDigital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BancoDigital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9576D29826A0FFA400BFBD0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9576D29C26A0FFA400BFBD0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -222,6 +230,10 @@
 				9586161326B75DD3004CA5F9 /* BankViewController.xib */,
 				9586161626B75F66004CA5F9 /* BankTableViewCell.swift */,
 				9586161726B75F66004CA5F9 /* BankTableViewCell.xib */,
+				95593CF826BCBC8900C9E078 /* ValueTransferViewController.swift */,
+				95593CF926BCBC8900C9E078 /* ValueTransferViewController.xib */,
+				95593CFC26BD889D00C9E078 /* SuccessfulTransferViewController.swift */,
+				95593CFD26BD889D00C9E078 /* SuccessfulTransferViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -382,6 +394,8 @@
 				958615FE26B64B42004CA5F9 /* StatementViewController.xib in Resources */,
 				9576D2E026A110E700BFBD0B /* WelcomeViewController.xib in Resources */,
 				9576D2A526A0FFA500BFBD0B /* Assets.xcassets in Resources */,
+				95593CFB26BCBC8900C9E078 /* ValueTransferViewController.xib in Resources */,
+				95593CFF26BD889D00C9E078 /* SuccessfulTransferViewController.xib in Resources */,
 				9576D2D326A101E600BFBD0B /* LoginViewController.xib in Resources */,
 				9586161126B73DED004CA5F9 /* TransferViewController.xib in Resources */,
 			);
@@ -543,6 +557,8 @@
 				9586160026B64BCA004CA5F9 /* FinancialTransaction.swift in Sources */,
 				9586160D26B73AB6004CA5F9 /* TransferViewModel.swift in Sources */,
 				9586161D26B76113004CA5F9 /* BankViewModel.swift in Sources */,
+				95593CFE26BD889D00C9E078 /* SuccessfulTransferViewController.swift in Sources */,
+				95593CFA26BCBC8900C9E078 /* ValueTransferViewController.swift in Sources */,
 				958615FD26B64B42004CA5F9 /* StatementViewController.swift in Sources */,
 				9586161B26B75FD8004CA5F9 /* Bank.swift in Sources */,
 				9586161426B75DD3004CA5F9 /* BankViewController.swift in Sources */,
