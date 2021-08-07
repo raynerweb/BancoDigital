@@ -13,6 +13,8 @@
 		95593CFB26BCBC8900C9E078 /* ValueTransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95593CF926BCBC8900C9E078 /* ValueTransferViewController.xib */; };
 		95593CFE26BD889D00C9E078 /* SuccessfulTransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95593CFC26BD889D00C9E078 /* SuccessfulTransferViewController.swift */; };
 		95593CFF26BD889D00C9E078 /* SuccessfulTransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95593CFD26BD889D00C9E078 /* SuccessfulTransferViewController.xib */; };
+		95593D0126BD9FF100C9E078 /* ValueTransferViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95593D0026BD9FF100C9E078 /* ValueTransferViewModel.swift */; };
+		95593D0326BDA09D00C9E078 /* SuccessfulTransferViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95593D0226BDA09D00C9E078 /* SuccessfulTransferViewModel.swift */; };
 		9576D29926A0FFA400BFBD0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576D29826A0FFA400BFBD0B /* AppDelegate.swift */; };
 		9576D29D26A0FFA400BFBD0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576D29C26A0FFA400BFBD0B /* ViewController.swift */; };
 		9576D2A326A0FFA400BFBD0B /* BancoDigital.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9576D2A126A0FFA400BFBD0B /* BancoDigital.xcdatamodeld */; };
@@ -72,6 +74,8 @@
 		95593CF926BCBC8900C9E078 /* ValueTransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ValueTransferViewController.xib; sourceTree = "<group>"; };
 		95593CFC26BD889D00C9E078 /* SuccessfulTransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulTransferViewController.swift; sourceTree = "<group>"; };
 		95593CFD26BD889D00C9E078 /* SuccessfulTransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessfulTransferViewController.xib; sourceTree = "<group>"; };
+		95593D0026BD9FF100C9E078 /* ValueTransferViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueTransferViewModel.swift; sourceTree = "<group>"; };
+		95593D0226BDA09D00C9E078 /* SuccessfulTransferViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulTransferViewModel.swift; sourceTree = "<group>"; };
 		9576D29526A0FFA400BFBD0B /* BancoDigital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BancoDigital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9576D29826A0FFA400BFBD0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9576D29C26A0FFA400BFBD0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -256,6 +260,8 @@
 				9586160A26B6F229004CA5F9 /* StatementViewModel.swift */,
 				9586160C26B73AB6004CA5F9 /* TransferViewModel.swift */,
 				9586161C26B76113004CA5F9 /* BankViewModel.swift */,
+				95593D0026BD9FF100C9E078 /* ValueTransferViewModel.swift */,
+				95593D0226BDA09D00C9E078 /* SuccessfulTransferViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -547,12 +553,14 @@
 				9576D29D26A0FFA400BFBD0B /* ViewController.swift in Sources */,
 				9576D29926A0FFA400BFBD0B /* AppDelegate.swift in Sources */,
 				9586160B26B6F229004CA5F9 /* StatementViewModel.swift in Sources */,
+				95593D0326BDA09D00C9E078 /* SuccessfulTransferViewModel.swift in Sources */,
 				9576D2A326A0FFA400BFBD0B /* BancoDigital.xcdatamodeld in Sources */,
 				9576D2D526A101F500BFBD0B /* Login.swift in Sources */,
 				9576D2DC26A10C7C00BFBD0B /* User.swift in Sources */,
 				9576D2DA26A1079C00BFBD0B /* AppCoordinator.swift in Sources */,
 				9576D2D226A101E600BFBD0B /* LoginViewController.swift in Sources */,
 				9586160726B6D316004CA5F9 /* FinancialTransactionTableViewCell.swift in Sources */,
+				95593D0126BD9FF100C9E078 /* ValueTransferViewModel.swift in Sources */,
 				9586161826B75F66004CA5F9 /* BankTableViewCell.swift in Sources */,
 				9586160026B64BCA004CA5F9 /* FinancialTransaction.swift in Sources */,
 				9586160D26B73AB6004CA5F9 /* TransferViewModel.swift in Sources */,

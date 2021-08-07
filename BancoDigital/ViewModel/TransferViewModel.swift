@@ -10,6 +10,7 @@ import RxSwift
 
 protocol TransferCoordinator: AnyObject {
     func showBankList()
+    func showValueTransfer()
 }
 
 class TransferViewModel {
@@ -28,6 +29,10 @@ class TransferViewModel {
     
     func selectBank(bank: Bank) {
         selectedBankState.onNext(bank)
+    }
+    
+    func nextButton() {
+        appCoordinator.showValueTransfer()
     }
     
 }

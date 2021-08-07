@@ -73,11 +73,13 @@
                         <segment title="Conta Poupança"/>
                     </segments>
                 </segmentedControl>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkV-nm-LCv">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkV-nm-LCv">
                     <rect key="frame" x="163.5" y="812" width="87" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <inset key="contentEdgeInsets" minX="16" minY="16" maxX="16" maxY="16"/>
                     <state key="normal" title="Avançar"/>
+                    <connections>
+                        <action selector="nextButton:" destination="-1" eventType="touchUpInside" id="aLJ-nL-54V"/>
+                    </connections>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="7BK-A2-JGK">
                     <rect key="frame" x="16" y="367.5" width="382" height="62.5"/>
@@ -141,12 +143,14 @@
             <constraints>
                 <constraint firstItem="jPC-Ao-WKA" firstAttribute="top" secondItem="gNW-Gt-kRY" secondAttribute="bottom" constant="8" id="38e-VU-y8Y"/>
                 <constraint firstItem="cbT-Gx-dNS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3tI-AN-iCt"/>
+                <constraint firstItem="xkV-nm-LCv" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="7Id-tP-Z7f"/>
                 <constraint firstItem="zRE-sm-QbJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="AYd-wd-aFC"/>
                 <constraint firstItem="gNW-Gt-kRY" firstAttribute="top" secondItem="cbT-Gx-dNS" secondAttribute="bottom" constant="24" id="DdL-MH-YZJ"/>
                 <constraint firstItem="7BK-A2-JGK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="G5j-9o-dsc"/>
                 <constraint firstItem="zRE-sm-QbJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HUe-da-Gd1"/>
                 <constraint firstItem="2h9-Xk-fqt" firstAttribute="top" secondItem="OM1-ZV-J1Z" secondAttribute="bottom" constant="16" id="IBW-z9-62J"/>
                 <constraint firstItem="2h9-Xk-fqt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Imu-iv-vuj"/>
+                <constraint firstItem="xkV-nm-LCv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LAN-TJ-L0D"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7BK-A2-JGK" secondAttribute="trailing" constant="16" id="LmW-HO-6Sl"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2h9-Xk-fqt" secondAttribute="trailing" constant="16" id="PLh-xn-29L"/>
                 <constraint firstItem="cbT-Gx-dNS" firstAttribute="top" secondItem="2h9-Xk-fqt" secondAttribute="bottom" constant="16" id="aaJ-Iz-b8B"/>
