@@ -15,8 +15,8 @@ enum WelcomeItemType {
     case card
     case balance
     case creditLimit
-    case cashback
-    case investiments
+//    case cashback
+//    case investiments
 }
 
 struct CardWelcomeItem : WelcomeItem {
@@ -30,4 +30,9 @@ struct CardWelcomeItem : WelcomeItem {
 struct BalanceWelcomeItem: WelcomeItem {
     let itemType: WelcomeItemType = .balance
     let balance: Double
+}
+
+struct CreditWelcomeItem: WelcomeItem {
+    let itemType: WelcomeItemType = .creditLimit
+    let limitValue: Double
 }

@@ -42,6 +42,9 @@ class WelcomeViewModel {
                 dueDate: Date(),
                 limitAvailable: 31234.01,
                 statusInvoice: "Fatura aberta"
+            ),
+            CreditWelcomeItem(
+                limitValue: 50000.00
             )
         ]
     }

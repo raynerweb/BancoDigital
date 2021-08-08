@@ -36,6 +36,7 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         BalanceTableViewCell.register(inside: self.tableView)
         CardTableViewCell.register(inside: self.tableView)
+        CreditTableViewCell.register(inside: self.tableView)
         
         subscribe()
         viewModel.fetchWelcomeItens()
@@ -77,7 +78,11 @@ extension WelcomeViewController: UITableViewDataSource {
             cell.setup(with: cardWelcomeItem)
             return cell
             
-        default: break
+        case .creditLimit:
+            guard let creditWelcomeItem = welcomeItem as? CreditWelcomeItem else { break }
+            let cell = tableView.dequeueReusableCell(withIdentifier: CreditTableViewCell.kReuseIdentifier, for: indexPath) as! CreditTableViewCell
+            cell.setup(with: creditWelcomeItem)
+            return cell
 
         }
         

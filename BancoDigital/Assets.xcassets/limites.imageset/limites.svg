@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="90.680786mm"
+   height="61.296616mm"
+   viewBox="0 0 90.680786 61.296615"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c4e8f9e, 2021-05-24)"
+   sodipodi:docname="limites.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.74592813"
+     inkscape:cx="280.18785"
+     inkscape:cy="37.537129"
+     inkscape:window-width="1440"
+     inkscape:window-height="792"
+     inkscape:window-x="1694"
+     inkscape:window-y="103"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-26.181555,7.636126)">
+    <g
+       id="g1036">
+      <rect
+         style="fill:#999999;stroke-width:0.254526"
+         id="rect932"
+         width="90.423782"
+         height="61.007507"
+         x="26.438562"
+         y="-7.3470168"
+         ry="8.0688543" />
+      <rect
+         style="fill:#ffffff;stroke-width:0.250177"
+         id="rect934"
+         width="89.487053"
+         height="59.55777"
+         x="26.181555"
+         y="-7.636126"
+         ry="7.8771119" />
+    </g>
+  </g>
+</svg>
