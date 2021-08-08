@@ -9,15 +9,15 @@ import UIKit
 
 class CardTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    static let kReuseIdentifier = "CardTableViewCell"
+    
+    static func register(inside tableView: UITableView) {
+        let nib = UINib(nibName: kReuseIdentifier, bundle: Bundle(for: CardTableViewCell.self))
+        tableView.register(nib, forCellReuseIdentifier: kReuseIdentifier)
     }
+    
+    func setup(with cardWelcomeItem: CardWelcomeItem) {
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
 }

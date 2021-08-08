@@ -35,6 +35,7 @@
 		957D5ECB26BF723100130BF7 /* WelcomeCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 957D5EC926BF723100130BF7 /* WelcomeCardViewController.xib */; };
 		957D5ECE26BF73D000130BF7 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D5ECC26BF73D000130BF7 /* CardTableViewCell.swift */; };
 		957D5ECF26BF73D000130BF7 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 957D5ECD26BF73D000130BF7 /* CardTableViewCell.xib */; };
+		957D5ED126BF79A900130BF7 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D5ED026BF79A900130BF7 /* WelcomeViewModel.swift */; };
 		958615FD26B64B42004CA5F9 /* StatementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958615FB26B64B42004CA5F9 /* StatementViewController.swift */; };
 		958615FE26B64B42004CA5F9 /* StatementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 958615FC26B64B42004CA5F9 /* StatementViewController.xib */; };
 		9586160026B64BCA004CA5F9 /* FinancialTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958615FF26B64BCA004CA5F9 /* FinancialTransaction.swift */; };
@@ -107,6 +108,7 @@
 		957D5EC926BF723100130BF7 /* WelcomeCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeCardViewController.xib; sourceTree = "<group>"; };
 		957D5ECC26BF73D000130BF7 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		957D5ECD26BF73D000130BF7 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
+		957D5ED026BF79A900130BF7 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		958615FB26B64B42004CA5F9 /* StatementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementViewController.swift; sourceTree = "<group>"; };
 		958615FC26B64B42004CA5F9 /* StatementViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatementViewController.xib; sourceTree = "<group>"; };
 		958615FF26B64BCA004CA5F9 /* FinancialTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialTransaction.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 				9586161C26B76113004CA5F9 /* BankViewModel.swift */,
 				95593D0026BD9FF100C9E078 /* ValueTransferViewModel.swift */,
 				95593D0226BDA09D00C9E078 /* SuccessfulTransferViewModel.swift */,
+				957D5ED026BF79A900130BF7 /* WelcomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -575,6 +578,7 @@
 				9576D2D526A101F500BFBD0B /* Login.swift in Sources */,
 				9576D2DC26A10C7C00BFBD0B /* User.swift in Sources */,
 				9576D2DA26A1079C00BFBD0B /* AppCoordinator.swift in Sources */,
+				957D5ED126BF79A900130BF7 /* WelcomeViewModel.swift in Sources */,
 				9576D2D226A101E600BFBD0B /* LoginViewController.swift in Sources */,
 				9586160726B6D316004CA5F9 /* FinancialTransactionTableViewCell.swift in Sources */,
 				95593D0126BD9FF100C9E078 /* ValueTransferViewModel.swift in Sources */,

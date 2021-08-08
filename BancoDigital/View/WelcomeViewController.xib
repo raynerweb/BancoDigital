@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="BancoDigital" customModuleProvider="target">
             <connections>
+                <outlet property="loading" destination="9qJ-Df-SvW" id="SqG-tr-PA2"/>
+                <outlet property="tableView" destination="Wch-21-FaS" id="sdh-fJ-WIW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,15 +20,28 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j0p-Dr-GAZ">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wch-21-FaS">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <viewLayoutGuide key="contentLayoutGuide" id="daN-EA-O5z"/>
-                    <viewLayoutGuide key="frameLayoutGuide" id="Xps-s3-PHJ"/>
-                </scrollView>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="NMt-pJ-TaT"/>
+                        <outlet property="delegate" destination="-1" id="J8N-4f-5yp"/>
+                    </connections>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="9qJ-Df-SvW">
+                    <rect key="frame" x="197" y="438" width="20" height="20"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Wch-21-FaS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="FnG-CH-2Vk"/>
+                <constraint firstItem="9qJ-Df-SvW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IEW-t8-ZFy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Wch-21-FaS" secondAttribute="trailing" id="Qph-zP-oov"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Wch-21-FaS" secondAttribute="bottom" id="VNr-jD-lXN"/>
+                <constraint firstItem="Wch-21-FaS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bXe-mG-B80"/>
+                <constraint firstItem="9qJ-Df-SvW" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="cN2-nb-Voz"/>
+            </constraints>
             <point key="canvasLocation" x="63.768115942028992" y="60.9375"/>
         </view>
     </objects>

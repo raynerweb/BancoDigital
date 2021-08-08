@@ -8,7 +8,7 @@
 import Foundation
 
 protocol WelcomeItem {
-    var welcomeItemType: WelcomeItemType { get }
+    var itemType: WelcomeItemType { get }
 }
 
 enum WelcomeItemType {
@@ -17,4 +17,12 @@ enum WelcomeItemType {
     case creditLimit
     case cashback
     case investiments
+}
+
+struct CardWelcomeItem : WelcomeItem {
+    let itemType: WelcomeItemType = .card
+    let invoiceValue: Double
+    let dueDate: Date
+    let limitAvailable: Double
+    let statusInvoice: String
 }
