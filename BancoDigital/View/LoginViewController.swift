@@ -42,6 +42,10 @@ class LoginViewController: UIViewController {
     }
     
     private func setupViews() {
+        self.username.rx.text.orEmpty.map { String($0.prefix(14)) }
+            .bind(to: self.username.rx.text)
+            .disposed(by: disposeBag)
+        
         self.password.rx.text.orEmpty.map { String($0.prefix(6)) }
             .bind(to: self.password.rx.text)
             .disposed(by: disposeBag)

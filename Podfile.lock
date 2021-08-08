@@ -1,4 +1,5 @@
 PODS:
+  - InputMask (6.1.0)
   - RxBlocking (5.1.1):
     - RxSwift (~> 5)
   - RxCocoa (5.1.1):
@@ -11,6 +12,7 @@ PODS:
     - RxSwift (~> 5)
 
 DEPENDENCIES:
+  - InputMask
   - RxBlocking (~> 5)
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
@@ -18,6 +20,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - InputMask
     - RxBlocking
     - RxCocoa
     - RxRelay
@@ -25,12 +28,13 @@ SPEC REPOS:
     - RxTest
 
 SPEC CHECKSUMS:
+  InputMask: 71d291dc54d2deaeac6512afb6ec2304228c0bb7
   RxBlocking: 5f700a78cad61ce253ebd37c9a39b5ccc76477b4
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
   RxTest: 274549b747dca56f47c52c8991ec5cf797ecfe40
 
-PODFILE CHECKSUM: 9ae8634f141b60994d8cc36f7e517af5192dd070
+PODFILE CHECKSUM: 3d1bbe0b025ed18471834c04ba6d6e6e6ce2683f
 
 COCOAPODS: 1.10.1

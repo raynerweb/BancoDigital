@@ -9,6 +9,7 @@ target 'BancoDigital' do
 
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
+  pod 'InputMask'
       
   target 'BancoDigitalTests' do
     inherit! :search_paths
