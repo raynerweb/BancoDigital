@@ -34,6 +34,7 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        BalanceTableViewCell.register(inside: self.tableView)
         CardTableViewCell.register(inside: self.tableView)
         
         subscribe()
@@ -64,6 +65,12 @@ extension WelcomeViewController: UITableViewDataSource {
         let itemType = welcomeItem.itemType
         
         switch itemType {
+        case .balance:
+            guard let balanceWelcomeItem = welcomeItem as? BalanceWelcomeItem else { break }
+            let cell = tableView.dequeueReusableCell(withIdentifier: BalanceTableViewCell.kReuseIdentifier, for: indexPath) as! BalanceTableViewCell
+            cell.setup(with: balanceWelcomeItem)
+            return cell
+            
         case .card:
             guard let cardWelcomeItem = welcomeItem as? CardWelcomeItem else { break }
             let cell = tableView.dequeueReusableCell(withIdentifier: CardTableViewCell.kReuseIdentifier, for: indexPath) as! CardTableViewCell
@@ -77,6 +84,7 @@ extension WelcomeViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: CardTableViewCell.kReuseIdentifier, for: indexPath) as! CardTableViewCell
         return cell
     }
+    
 }
 
 extension WelcomeViewController: UITableViewDelegate {

@@ -32,7 +32,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="173" translatesAutoresizingMaskIntoConstraints="NO" id="Wjp-7Z-0aQ">
-                        <rect key="frame" x="20" y="374.5" width="350" height="20.5"/>
+                        <rect key="frame" x="20" y="456" width="350" height="20.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vencimento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zia-Lb-BeP">
                                 <rect key="frame" x="0.0" y="0.0" width="350" height="20.5"/>
@@ -53,7 +53,7 @@
                         </constraints>
                     </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="173" translatesAutoresizingMaskIntoConstraints="NO" id="xKd-0c-ho9">
-                        <rect key="frame" x="20" y="419" width="350" height="20.5"/>
+                        <rect key="frame" x="20" y="500.5" width="350" height="20.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Limite Disponível" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3v-XV-zK0">
                                 <rect key="frame" x="0.0" y="0.0" width="350" height="20.5"/>
@@ -80,8 +80,9 @@
                     <constraint firstItem="Wjp-7Z-0aQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="EfQ-LS-Vjv"/>
                     <constraint firstItem="Ta9-4F-ObA" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="GG3-F3-7p6"/>
                     <constraint firstAttribute="trailingMargin" secondItem="xKd-0c-ho9" secondAttribute="trailing" id="KP8-Qr-kRo"/>
-                    <constraint firstItem="Wjp-7Z-0aQ" firstAttribute="top" secondItem="RqQ-Mj-BAC" secondAttribute="bottom" constant="24" id="PmI-dw-ETC"/>
+                    <constraint firstItem="Wjp-7Z-0aQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="RqQ-Mj-BAC" secondAttribute="bottom" constant="24" id="PmI-dw-ETC"/>
                     <constraint firstItem="Ta9-4F-ObA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="32" id="Yx9-qh-5HB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="xKd-0c-ho9" secondAttribute="bottom" constant="32" id="gYE-DL-iqt"/>
                     <constraint firstItem="RqQ-Mj-BAC" firstAttribute="top" secondItem="7NX-dQ-VLU" secondAttribute="bottom" constant="16" id="imO-fZ-ejl"/>
                     <constraint firstItem="7NX-dQ-VLU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ip8-c5-1yL"/>
                     <constraint firstItem="Wjp-7Z-0aQ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="mjf-u8-VD6"/>

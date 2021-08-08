@@ -34,6 +34,9 @@ class WelcomeViewModel {
     
     private func getWelcomeItens() throws -> [WelcomeItem]  {
         return [
+            BalanceWelcomeItem(
+                balance: 4322.54
+            ),
             CardWelcomeItem(
                 invoiceValue: 8765.99,
                 dueDate: Date(),

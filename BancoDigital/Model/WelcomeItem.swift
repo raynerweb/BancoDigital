@@ -26,3 +26,8 @@ struct CardWelcomeItem : WelcomeItem {
     let limitAvailable: Double
     let statusInvoice: String
 }
+
+struct BalanceWelcomeItem: WelcomeItem {
+    let itemType: WelcomeItemType = .balance
+    let balance: Double
+}

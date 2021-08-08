@@ -51,6 +51,8 @@
 		9586161926B75F66004CA5F9 /* BankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9586161726B75F66004CA5F9 /* BankTableViewCell.xib */; };
 		9586161B26B75FD8004CA5F9 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9586161A26B75FD8004CA5F9 /* Bank.swift */; };
 		9586161D26B76113004CA5F9 /* BankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9586161C26B76113004CA5F9 /* BankViewModel.swift */; };
+		95C89A7326C01FE8008B967F /* BalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C89A7126C01FE8008B967F /* BalanceTableViewCell.swift */; };
+		95C89A7426C01FE8008B967F /* BalanceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95C89A7226C01FE8008B967F /* BalanceTableViewCell.xib */; };
 		BCF7731BB510184842190CDA /* Pods_BancoDigital_BancoDigitalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9E6C287208EBA9F150C785 /* Pods_BancoDigital_BancoDigitalUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +126,8 @@
 		9586161726B75F66004CA5F9 /* BankTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankTableViewCell.xib; sourceTree = "<group>"; };
 		9586161A26B75FD8004CA5F9 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		9586161C26B76113004CA5F9 /* BankViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankViewModel.swift; sourceTree = "<group>"; };
+		95C89A7126C01FE8008B967F /* BalanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceTableViewCell.swift; sourceTree = "<group>"; };
+		95C89A7226C01FE8008B967F /* BalanceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalanceTableViewCell.xib; sourceTree = "<group>"; };
 		964D59337D18453FB32F6CFB /* Pods-BancoDigitalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancoDigitalTests.release.xcconfig"; path = "Target Support Files/Pods-BancoDigitalTests/Pods-BancoDigitalTests.release.xcconfig"; sourceTree = "<group>"; };
 		98037CED0B7EEF2EEEFC89B6 /* Pods-BancoDigital-BancoDigitalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancoDigital-BancoDigitalUITests.release.xcconfig"; path = "Target Support Files/Pods-BancoDigital-BancoDigitalUITests/Pods-BancoDigital-BancoDigitalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		99AF650866D44F093FEA1705 /* Pods-BancoDigital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancoDigital.debug.xcconfig"; path = "Target Support Files/Pods-BancoDigital/Pods-BancoDigital.debug.xcconfig"; sourceTree = "<group>"; };
@@ -254,6 +258,8 @@
 				957D5EC926BF723100130BF7 /* WelcomeCardViewController.xib */,
 				957D5ECC26BF73D000130BF7 /* CardTableViewCell.swift */,
 				957D5ECD26BF73D000130BF7 /* CardTableViewCell.xib */,
+				95C89A7126C01FE8008B967F /* BalanceTableViewCell.swift */,
+				95C89A7226C01FE8008B967F /* BalanceTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -415,6 +421,7 @@
 				9586161926B75F66004CA5F9 /* BankTableViewCell.xib in Resources */,
 				9576D2A826A0FFA500BFBD0B /* LaunchScreen.storyboard in Resources */,
 				957D5ECB26BF723100130BF7 /* WelcomeCardViewController.xib in Resources */,
+				95C89A7426C01FE8008B967F /* BalanceTableViewCell.xib in Resources */,
 				9586161526B75DD3004CA5F9 /* BankViewController.xib in Resources */,
 				957D5ECF26BF73D000130BF7 /* CardTableViewCell.xib in Resources */,
 				958615FE26B64B42004CA5F9 /* StatementViewController.xib in Resources */,
@@ -594,6 +601,7 @@
 				9586161B26B75FD8004CA5F9 /* Bank.swift in Sources */,
 				957D5ECA26BF723100130BF7 /* WelcomeCardViewController.swift in Sources */,
 				9586161426B75DD3004CA5F9 /* BankViewController.swift in Sources */,
+				95C89A7326C01FE8008B967F /* BalanceTableViewCell.swift in Sources */,
 				9576D2D726A1022E00BFBD0B /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
