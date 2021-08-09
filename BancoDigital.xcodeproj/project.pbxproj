@@ -55,6 +55,7 @@
 		95C89A7826C0258B008B967F /* CreditTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95C89A7626C0258B008B967F /* CreditTableViewCell.xib */; };
 		95C89A7D26C0EE75008B967F /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C89A7C26C0EE75008B967F /* DoubleExtension.swift */; };
 		95C89A7F26C0F7F3008B967F /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C89A7E26C0F7F3008B967F /* DateExtension.swift */; };
+		95C89A8126C0FFB1008B967F /* BankTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C89A8026C0FFB1008B967F /* BankTransfer.swift */; };
 		BCF7731BB510184842190CDA /* Pods_BancoDigital_BancoDigitalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9E6C287208EBA9F150C785 /* Pods_BancoDigital_BancoDigitalUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -132,6 +133,7 @@
 		95C89A7626C0258B008B967F /* CreditTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditTableViewCell.xib; sourceTree = "<group>"; };
 		95C89A7C26C0EE75008B967F /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		95C89A7E26C0F7F3008B967F /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		95C89A8026C0FFB1008B967F /* BankTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankTransfer.swift; sourceTree = "<group>"; };
 		964D59337D18453FB32F6CFB /* Pods-BancoDigitalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancoDigitalTests.release.xcconfig"; path = "Target Support Files/Pods-BancoDigitalTests/Pods-BancoDigitalTests.release.xcconfig"; sourceTree = "<group>"; };
 		98037CED0B7EEF2EEEFC89B6 /* Pods-BancoDigital-BancoDigitalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancoDigital-BancoDigitalUITests.release.xcconfig"; path = "Target Support Files/Pods-BancoDigital-BancoDigitalUITests/Pods-BancoDigital-BancoDigitalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		99AF650866D44F093FEA1705 /* Pods-BancoDigital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancoDigital.debug.xcconfig"; path = "Target Support Files/Pods-BancoDigital/Pods-BancoDigital.debug.xcconfig"; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 				958615FF26B64BCA004CA5F9 /* FinancialTransaction.swift */,
 				9586161A26B75FD8004CA5F9 /* Bank.swift */,
 				957D5EC226BF3A2900130BF7 /* WelcomeItem.swift */,
+				95C89A8026C0FFB1008B967F /* BankTransfer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -617,6 +620,7 @@
 				957D5ECE26BF73D000130BF7 /* CardTableViewCell.swift in Sources */,
 				9586161B26B75FD8004CA5F9 /* Bank.swift in Sources */,
 				9586161426B75DD3004CA5F9 /* BankViewController.swift in Sources */,
+				95C89A8126C0FFB1008B967F /* BankTransfer.swift in Sources */,
 				95C89A7326C01FE8008B967F /* BalanceTableViewCell.swift in Sources */,
 				9576D2D726A1022E00BFBD0B /* LoginViewModel.swift in Sources */,
 			);

@@ -57,9 +57,10 @@ class TransferViewController: UIViewController {
         super.viewDidLoad()
         title = "Transferência"
         subscribe()
+        setupViews()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    private func setupViews() {
         self.constraintTop = self.favoredDocumentoConstraintTop.constant
         self.constraintBottom = self.favoredDocumentContraintBottom.constant
         self.constraintRight = self.favoredDocumentConstraintRight.constant
@@ -85,19 +86,13 @@ class TransferViewController: UIViewController {
     }
     
     private func showDocumentField() {
-        
         self.favoredDocumentoConstraintTop.constant = self.constraintTop ?? 0.0
-        
         self.favoredDocumentContraintBottom.constant = self.constraintBottom ?? 0.0
-        
         self.favoredDocumentConstraintLeft.constant = self.constraintLeft ?? 0.0
-        
         self.favoredDocumentConstraintRight.constant = self.constraintRight ?? 0.0
-        
         self.favoredDocument.isHidden = false
         self.view.layoutIfNeeded()
     }
-    
     
     @IBAction func nextButton(_ sender: Any) {
         viewModel.nextButton()
