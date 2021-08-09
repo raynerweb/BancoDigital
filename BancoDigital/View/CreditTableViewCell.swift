@@ -9,6 +9,8 @@ import UIKit
 
 class CreditTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var limitValue: UILabel!
+    
     static let kReuseIdentifier = "CreditTableViewCell"
     
     static func register(inside tableView: UITableView) {
@@ -17,7 +19,7 @@ class CreditTableViewCell: UITableViewCell {
     }
     
     func setup(with credit: CreditWelcomeItem) {
-
+        limitValue.text = credit.limitValue.toMoney()
     }
     
 }

@@ -56,13 +56,13 @@
                         <rect key="frame" x="20" y="500.5" width="350" height="20.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Limite Disponível" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3v-XV-zK0">
-                                <rect key="frame" x="0.0" y="0.0" width="350" height="20.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="129" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 31.321,98" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zfb-ph-5CE">
-                                <rect key="frame" x="251" y="0.0" width="99" height="20.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="350" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -93,6 +93,12 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dueDate" destination="rJQ-vE-HTU" id="VCZ-i1-vKI"/>
+                <outlet property="invoiceValue" destination="RqQ-Mj-BAC" id="faC-jf-Eff"/>
+                <outlet property="limitAvailable" destination="Zfb-ph-5CE" id="RkT-qp-8A2"/>
+                <outlet property="statusInvoice" destination="7NX-dQ-VLU" id="tJ1-7B-MRw"/>
+            </connections>
             <point key="canvasLocation" x="194" y="157"/>
         </tableViewCell>
     </objects>

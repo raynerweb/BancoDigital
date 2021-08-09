@@ -55,6 +55,8 @@
 		95C89A7426C01FE8008B967F /* BalanceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95C89A7226C01FE8008B967F /* BalanceTableViewCell.xib */; };
 		95C89A7726C0258B008B967F /* CreditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C89A7526C0258B008B967F /* CreditTableViewCell.swift */; };
 		95C89A7826C0258B008B967F /* CreditTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95C89A7626C0258B008B967F /* CreditTableViewCell.xib */; };
+		95C89A7D26C0EE75008B967F /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C89A7C26C0EE75008B967F /* DoubleExtension.swift */; };
+		95C89A7F26C0F7F3008B967F /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C89A7E26C0F7F3008B967F /* DateExtension.swift */; };
 		BCF7731BB510184842190CDA /* Pods_BancoDigital_BancoDigitalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9E6C287208EBA9F150C785 /* Pods_BancoDigital_BancoDigitalUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -132,6 +134,8 @@
 		95C89A7226C01FE8008B967F /* BalanceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalanceTableViewCell.xib; sourceTree = "<group>"; };
 		95C89A7526C0258B008B967F /* CreditTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditTableViewCell.swift; sourceTree = "<group>"; };
 		95C89A7626C0258B008B967F /* CreditTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditTableViewCell.xib; sourceTree = "<group>"; };
+		95C89A7C26C0EE75008B967F /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		95C89A7E26C0F7F3008B967F /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		964D59337D18453FB32F6CFB /* Pods-BancoDigitalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancoDigitalTests.release.xcconfig"; path = "Target Support Files/Pods-BancoDigitalTests/Pods-BancoDigitalTests.release.xcconfig"; sourceTree = "<group>"; };
 		98037CED0B7EEF2EEEFC89B6 /* Pods-BancoDigital-BancoDigitalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancoDigital-BancoDigitalUITests.release.xcconfig"; path = "Target Support Files/Pods-BancoDigital-BancoDigitalUITests/Pods-BancoDigital-BancoDigitalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		99AF650866D44F093FEA1705 /* Pods-BancoDigital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancoDigital.debug.xcconfig"; path = "Target Support Files/Pods-BancoDigital/Pods-BancoDigital.debug.xcconfig"; sourceTree = "<group>"; };
@@ -205,6 +209,7 @@
 		9576D29726A0FFA400BFBD0B /* BancoDigital */ = {
 			isa = PBXGroup;
 			children = (
+				95C89A7926C0EE07008B967F /* Extention */,
 				9576D2D826A1078700BFBD0B /* Coordinator */,
 				9576D2CF26A101C900BFBD0B /* ViewModel */,
 				9576D2CE26A101C400BFBD0B /* Model */,
@@ -302,6 +307,15 @@
 				9576D2D926A1079C00BFBD0B /* AppCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		95C89A7926C0EE07008B967F /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				95C89A7C26C0EE75008B967F /* DoubleExtension.swift */,
+				95C89A7E26C0F7F3008B967F /* DateExtension.swift */,
+			);
+			path = Extention;
 			sourceTree = "<group>";
 		};
 		EE8E019533BEBB4A03D9C6A4 /* Frameworks */ = {
@@ -586,6 +600,7 @@
 				9576D2DF26A110E700BFBD0B /* WelcomeViewController.swift in Sources */,
 				9586161026B73DED004CA5F9 /* TransferViewController.swift in Sources */,
 				9576D29D26A0FFA400BFBD0B /* ViewController.swift in Sources */,
+				95C89A7F26C0F7F3008B967F /* DateExtension.swift in Sources */,
 				9576D29926A0FFA400BFBD0B /* AppDelegate.swift in Sources */,
 				9586160B26B6F229004CA5F9 /* StatementViewModel.swift in Sources */,
 				95593D0326BDA09D00C9E078 /* SuccessfulTransferViewModel.swift in Sources */,
@@ -602,6 +617,7 @@
 				957D5EC326BF3A2900130BF7 /* WelcomeItem.swift in Sources */,
 				9586160D26B73AB6004CA5F9 /* TransferViewModel.swift in Sources */,
 				9586161D26B76113004CA5F9 /* BankViewModel.swift in Sources */,
+				95C89A7D26C0EE75008B967F /* DoubleExtension.swift in Sources */,
 				95593CFE26BD889D00C9E078 /* SuccessfulTransferViewController.swift in Sources */,
 				95593CFA26BCBC8900C9E078 /* ValueTransferViewController.swift in Sources */,
 				958615FD26B64B42004CA5F9 /* StatementViewController.swift in Sources */,

@@ -9,6 +9,11 @@ import UIKit
 
 class CardTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var statusInvoice: UILabel!
+    @IBOutlet weak var invoiceValue: UILabel!
+    @IBOutlet weak var dueDate: UILabel!
+    @IBOutlet weak var limitAvailable: UILabel!
+    
     static let kReuseIdentifier = "CardTableViewCell"
     
     static func register(inside tableView: UITableView) {
@@ -17,7 +22,10 @@ class CardTableViewCell: UITableViewCell {
     }
     
     func setup(with cardWelcomeItem: CardWelcomeItem) {
-
+        self.statusInvoice.text = cardWelcomeItem.statusInvoice
+        self.invoiceValue.text = cardWelcomeItem.invoiceValue.toMoney()
+        self.dueDate.text = cardWelcomeItem.dueDate.format()
+        self.limitAvailable.text = cardWelcomeItem.limitAvailable.toMoney()
     }
     
 }

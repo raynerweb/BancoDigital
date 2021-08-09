@@ -9,6 +9,7 @@ import UIKit
 
 class BalanceTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var balanceValue: UILabel!
     static let kReuseIdentifier = "BalanceTableViewCell"
     
     static func register(inside tableView: UITableView) {
@@ -17,7 +18,7 @@ class BalanceTableViewCell: UITableViewCell {
     }
     
     func setup(with balance: BalanceWelcomeItem) {
-
+        self.balanceValue.text = balance.balance.toMoney()
     }
     
 }
