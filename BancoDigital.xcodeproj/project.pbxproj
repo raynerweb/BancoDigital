@@ -31,8 +31,6 @@
 		9576D2DF26A110E700BFBD0B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9576D2DD26A110E700BFBD0B /* WelcomeViewController.swift */; };
 		9576D2E026A110E700BFBD0B /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9576D2DE26A110E700BFBD0B /* WelcomeViewController.xib */; };
 		957D5EC326BF3A2900130BF7 /* WelcomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D5EC226BF3A2900130BF7 /* WelcomeItem.swift */; };
-		957D5ECA26BF723100130BF7 /* WelcomeCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D5EC826BF723100130BF7 /* WelcomeCardViewController.swift */; };
-		957D5ECB26BF723100130BF7 /* WelcomeCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 957D5EC926BF723100130BF7 /* WelcomeCardViewController.xib */; };
 		957D5ECE26BF73D000130BF7 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D5ECC26BF73D000130BF7 /* CardTableViewCell.swift */; };
 		957D5ECF26BF73D000130BF7 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 957D5ECD26BF73D000130BF7 /* CardTableViewCell.xib */; };
 		957D5ED126BF79A900130BF7 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D5ED026BF79A900130BF7 /* WelcomeViewModel.swift */; };
@@ -110,8 +108,6 @@
 		9576D2DD26A110E700BFBD0B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		9576D2DE26A110E700BFBD0B /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 		957D5EC226BF3A2900130BF7 /* WelcomeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeItem.swift; sourceTree = "<group>"; };
-		957D5EC826BF723100130BF7 /* WelcomeCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCardViewController.swift; sourceTree = "<group>"; };
-		957D5EC926BF723100130BF7 /* WelcomeCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeCardViewController.xib; sourceTree = "<group>"; };
 		957D5ECC26BF73D000130BF7 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		957D5ECD26BF73D000130BF7 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
 		957D5ED026BF79A900130BF7 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
@@ -263,8 +259,6 @@
 				95593CF926BCBC8900C9E078 /* ValueTransferViewController.xib */,
 				95593CFC26BD889D00C9E078 /* SuccessfulTransferViewController.swift */,
 				95593CFD26BD889D00C9E078 /* SuccessfulTransferViewController.xib */,
-				957D5EC826BF723100130BF7 /* WelcomeCardViewController.swift */,
-				957D5EC926BF723100130BF7 /* WelcomeCardViewController.xib */,
 				957D5ECC26BF73D000130BF7 /* CardTableViewCell.swift */,
 				957D5ECD26BF73D000130BF7 /* CardTableViewCell.xib */,
 				95C89A7126C01FE8008B967F /* BalanceTableViewCell.swift */,
@@ -441,7 +435,6 @@
 				95C89A7826C0258B008B967F /* CreditTableViewCell.xib in Resources */,
 				9586161926B75F66004CA5F9 /* BankTableViewCell.xib in Resources */,
 				9576D2A826A0FFA500BFBD0B /* LaunchScreen.storyboard in Resources */,
-				957D5ECB26BF723100130BF7 /* WelcomeCardViewController.xib in Resources */,
 				95C89A7426C01FE8008B967F /* BalanceTableViewCell.xib in Resources */,
 				9586161526B75DD3004CA5F9 /* BankViewController.xib in Resources */,
 				957D5ECF26BF73D000130BF7 /* CardTableViewCell.xib in Resources */,
@@ -623,7 +616,6 @@
 				958615FD26B64B42004CA5F9 /* StatementViewController.swift in Sources */,
 				957D5ECE26BF73D000130BF7 /* CardTableViewCell.swift in Sources */,
 				9586161B26B75FD8004CA5F9 /* Bank.swift in Sources */,
-				957D5ECA26BF723100130BF7 /* WelcomeCardViewController.swift in Sources */,
 				9586161426B75DD3004CA5F9 /* BankViewController.swift in Sources */,
 				95C89A7326C01FE8008B967F /* BalanceTableViewCell.swift in Sources */,
 				9576D2D726A1022E00BFBD0B /* LoginViewModel.swift in Sources */,
